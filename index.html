@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2016/03/27/18/31/book-1283468_1280.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="todo-container">
+        <!-- todo list header -->
+        <div id="header">
+            <h1>To Do List</h1>
+        </div>
+
+        <!-- create input box -->
+        <div id="todo-form">
+            <input type="text" class="input-item" name="input_box" id="input-box" placeholder="Add Task" />
+            <!-- add button -->
+            <button id="input-button" onclick='addTask()'>
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <!-- task list -->
+        <h2>Task List</h2>
+        <ul id="list-container"></ul>
+    </div>
+    <hr />
+    <!-- task list counter -->
+    <div class="counter-container">
+        <div id="task-counters">
+            Completed: <span id="completed-counter">0</span> | Uncompleted:
+            <span id="uncompleted-counter">0</span>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
